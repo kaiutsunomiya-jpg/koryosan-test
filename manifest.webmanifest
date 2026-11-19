@@ -1,14 +1,13 @@
 {
-  "name": "校了さん",
-  "short_name": "校了さん",
-  "description": "校了のタスク・タスク・曲リスト・練習タイテ・セトリ作成・メトロノーム",
+  "name": "校了さん TEST — スケジュール試作",
+  "short_name": "校了さん TEST",
   "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "lang": "ja",
-  "theme_color": "#2f6f91",
   "background_color": "#eef5f9",
+  "theme_color": "#2f6f91",
+  "lang": "ja",
   "icons": [
     {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
     {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
