@@ -1,0 +1,17 @@
+/* ログイン必須のゲート。アプリ本体を認証成功までロードしない。 */
+.auth-screen{position:fixed;inset:0;z-index:900;background:linear-gradient(155deg,#eaf2f9,#a9c7d7);display:grid;place-items:center;min-height:100dvh;padding:24px;color:#123449;color-scheme:light}
+.auth-screen[hidden],.auth-screen [hidden]{display:none!important}
+.auth-card{width:min(100%,390px);padding:30px 25px;background:#fff;border-radius:20px;box-shadow:0 18px 60px #183e5133;text-align:center}
+.auth-card>img{width:72px;height:72px;border-radius:18px;object-fit:cover;margin:auto}
+.auth-card h1{font-size:25px;margin:12px 0 8px}
+.auth-card p{font-size:13px;line-height:1.7;color:#42687b;min-height:21px;margin:8px 0 15px;overflow-wrap:anywhere}
+.auth-card form{display:grid;gap:17px;text-align:left;margin-top:18px}
+.auth-card label{font-size:12px;font-weight:700;color:#395b73;display:grid;gap:7px}
+.auth-card input{height:45px;border:1px solid #abc4d3;border-radius:10px;padding:9px 12px;font-size:15px;min-width:0;color:#163d55;background:#f8fbfc}
+.auth-card input:focus{outline:2px solid #397ab3}
+.auth-card button[type=submit]{height:46px;background:#2c6f98;border:0;border-radius:10px;color:#fff;font-weight:750;font-size:15px;margin-top:2px}
+.auth-card button:disabled{opacity:.5}
+.auth-spinner{margin:14px auto;border:3px solid #bdd1de;border-top-color:#2b6c8e;border-radius:50%;width:25px;height:25px;animation:authspin .8s linear infinite}
+@keyframes authspin{to{transform:rotate(360deg)}}
+.auth-logout{font-size:12px;color:#376c88;text-decoration:underline;border:0;background:transparent;padding:8px 12px;margin-top:18px}
+.auth-screen[data-state=login] .auth-logout,.auth-screen[data-state=setup] .auth-logout{display:none}
